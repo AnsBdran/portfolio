@@ -6,3 +6,36 @@
 body {
   @apply font-fira bg-dark text-white;
 }
+
+.bordered-wrapper {
+  /* box-shadow: 2px 0 0 0 #888, 0 2px 0 0 #888, 2px 2px 0 0 #888,
+     2px 0 0 0 #888 inset, 0 2px 0 0 #888 inset; */
+  /* padding: 3px; */
+  /* outline: 3px solid red; */
+  /* border: 3px solid red; */
+  @apply outline outline-gray-500;
+}
+.bordered-wrapper > *:not(.bordered-wrapper) {
+  @apply p-2;
+}
+
+.project-card img {
+  border-width: 2px 2px 0 2px;
+  width: 100%;
+}
+
+.btn {
+  @apply border py-2 px-8 block;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply text-light_text;
+}
+
+p,
+span {
+  @apply text-dimmed_text;
+}

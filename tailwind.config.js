@@ -9,6 +9,8 @@ export default {
       colors: {
         primary: '#dafa15',
         dark: '#282C33',
+        light_text: '#eee',
+        dimmed_text: '#888',
       },
     },
   },
