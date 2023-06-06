@@ -4,7 +4,7 @@
 @tailwind components;
 
 body {
-  @apply font-fira bg-dark text-white;
+  @apply overflow-x-hidden bg-dark font-fira text-dimmed_text;
 }
 
 .bordered-wrapper {
@@ -13,10 +13,10 @@ body {
   /* padding: 3px; */
   /* outline: 3px solid red; */
   /* border: 3px solid red; */
-  @apply outline outline-gray-500;
-}
-.bordered-wrapper > *:not(.bordered-wrapper) {
-  @apply p-2;
+  @apply outline outline-2 outline-gray-500;
+  opacity: 0.8;
+  background-image: radial-gradient(#3c91e66b 0.5px, #00000000 0.5px);
+  background-size: 10px 10px;
 }
 
 .project-card img {
@@ -25,17 +25,33 @@ body {
 }
 
 .btn {
-  @apply border py-2 px-8 block;
+  /* @apply block border border-primary px-8 py-2;
+  @apply relative block bg-primary px-8 py-2 text-white;
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
+  box-shadow: 0 0 0 2px yellow, 0 0.625em 0 0 yellow;
+  transform: translate3d(0, 0.75em, -1em); */
+  /* @apply mx-5 flex transform rounded-md bg-primary px-4 py-3 text-white shadow-lg outline-none transition-transform focus:ring-4 active:scale-x-75; */
 }
+
+/* .btn::before {
+  display: block; 
+  box-shadow: 0 0 0 2px red, 0 0.625em 0 0 red;
+  transform: translate3d(0, 0.75em, -1em);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  z-index: 2;
+  border: 2px solid blue;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+} */
 
 h1,
 h2,
 h3,
 h4 {
   @apply text-light_text;
-}
-
-p,
-span {
-  @apply text-dimmed_text;
 }

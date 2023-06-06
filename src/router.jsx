@@ -13,7 +13,7 @@ export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route element={<Home />} index />
-      <Route element={<Projects />} path='project' />
+      <Route element={<Projects />} path='projects' />
       <Route element={<About />} path='about' />
       <Route element={<Contact />} path='contact' />
     </Route>

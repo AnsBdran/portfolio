@@ -7,10 +7,10 @@ export default {
         fira: ['Fira Code', 'monospace'],
       },
       colors: {
-        primary: '#dafa15',
+        primary: '#3C91E6',
         dark: '#282C33',
-        light_text: '#eee',
-        dimmed_text: '#888',
+        light_text: '#FAFFFD',
+        dimmed_text: '#828E82',
       },
     },
   },

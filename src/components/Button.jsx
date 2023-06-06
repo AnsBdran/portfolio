@@ -1,8 +1,16 @@
-import React from 'react';
-
-const Button = ({ children, ...props }) => {
+const Button = ({ children, small, sub, className, ...props }) => {
   return (
-    <button className='px-6 py-2 border border-primary' {...props}>
+    <button
+      className={`flex transform items-center gap-1 rounded-md  text-white shadow-lg outline-none transition-all focus:ring-4 active:scale-x-75 ${
+        small ? 'px-2 py-1' : 'px-4 py-3'
+      }
+      ${
+        sub
+          ? 'border-2 border-primary hover:border-transparent hover:bg-primary'
+          : 'bg-primary '
+      } ${className}`}
+      {...props}
+    >
       {children}
     </button>
   );

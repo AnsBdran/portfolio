@@ -1,6 +1,7 @@
-import React from 'react';
 import { BordersWrapper } from './elements';
 import Button from './Button';
+
+import { BsPlay, BsGithub } from 'react-icons/bs';
 
 const ProjectCard = () => {
   return (
@@ -16,12 +17,18 @@ const ProjectCard = () => {
       <div className='p-2'>
         <h3>Card Matching</h3>
         <p>try to get all the cards matched!</p>
-        <div className='flex gap-4 mt-3'>
-          <a href='#' className='btn'>
-            Demo
+        <div className='mt-3 flex gap-4'>
+          <a href='#'>
+            <Button sub small className=''>
+              Demo
+              <BsPlay size={20} />
+            </Button>
           </a>
-          <a href='#' className='btn'>
-            Repo
+          <a href='#'>
+            <Button sub small>
+              Repo
+              <BsGithub />
+            </Button>
           </a>
         </div>
       </div>

@@ -7,11 +7,11 @@ import Projects from '../components/sections/Projects';
 const Home = () => {
   return (
     <>
-      {/* <Hero /> */}
-      {/* <Projects /> */}
-      {/* <Skills /> */}
-      {/* <About /> */}
-      {/* <Contact /> */}
+      <Hero />
+      <Projects />
+      <Skills />
+      <About />
+      <Contact />
     </>
   );
 };

@@ -1,10 +1,9 @@
-import React from 'react';
-
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
-    <footer className='border-t border-gray-400'>
+    <footer className='border-t border-gray-400 p-2'>
       <section>
-        <div>
+        <div className='text-center'>
           <p>Anas Badran</p>
           <p>Front-end Developer</p>
         </div>
@@ -13,7 +12,7 @@ const Footer = () => {
           <div>icons</div>
         </div>
       </section>
-      <p>Copyright 2023. Made By Anas Badran</p>
+      <p>Copyright {currentYear}. Made By Anas Badran</p>
     </footer>
   );
 };
