@@ -18,17 +18,18 @@ const Header = () => {
   };
 
   return (
-    <header className=''>
+    <header className='mx-auto w-full max-w-6xl'>
       <section className='flex items-center justify-between px-3 py-5'>
         <Link to='/' className='flex items-center gap-2 text-xl'>
           <Logo />
           Anas Badran
         </Link>
-        <Button small onClick={() => setShowMenu(true)}>
-          <div className=''>
-            <TfiMenu size={24} className='block aspect-square cursor-pointer' />
-          </div>
+        <Button small onClick={() => setShowMenu(true)} className='sm:hidden'>
+          <TfiMenu size={24} className='block aspect-square cursor-pointer' />
         </Button>
+        <div className='hidden sm:block'>
+          <Nav className='flex gap-6' />
+        </div>
       </section>
       <section>
         <Sidebar
@@ -36,7 +37,6 @@ const Header = () => {
           showHideMenu={clickMenuHandler}
           closeMenu={closeMenuHandler}
         />
-        <Nav className='hidden sm:block' />
       </section>
     </header>
   );

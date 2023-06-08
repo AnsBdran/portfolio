@@ -1,38 +1,39 @@
-import { BordersWrapper, HighLighted, Icon } from '../elements';
+import { BordersWrapper, HighLighted, Section } from '../elements';
 import Button from '../Button';
 import { FaQuoteLeft } from 'react-icons/fa';
 import { HiOutlineMail, HiDownload } from 'react-icons/hi';
 
 const Hero = () => {
   return (
-    <section className='flex flex-col gap-8'>
-      <div>
-        <h1 className='mb-3 text-3xl leading-10'>
-          Hello, I'm <HighLighted thick={true}>Anas Badran</HighLighted>, a
-          Front-end Web Developer
-        </h1>
-        <p className='mb-4'>
-          I enjoy creating responsive web apps, beside other things.
-        </p>
-        <div className='flex gap-8'>
-          <Button>
-            Contact me <HiOutlineMail size={20} />
-          </Button>
-          <Button>
-            My resume <HiDownload />
-          </Button>
+    <>
+      <Section className='min-h-[60vh]'>
+        <div className=' flex flex-1 flex-col md:gap-4'>
+          <h1 className='mb-3 whitespace-nowrap '>
+            <span className='bg-gradient-to-r from-lime-300 to-primary bg-clip-text font-black text-transparent'>
+              Anas Badran <br />
+            </span>
+            <HighLighted thick>front-end</HighLighted> developer
+          </h1>
+          <p className='mb-4'>
+            I enjoy creating responsive web apps, beside other things.
+          </p>
+          <div className='flex gap-8'>
+            <a href='mailto:ansbdran@hotmail.com'>
+              <Button>
+                Send email <HiOutlineMail size={20} />
+              </Button>
+            </a>
+            <Button>
+              My resume <HiDownload />
+            </Button>
+          </div>
         </div>
-      </div>
-      <div>
-        <img src='assets/hero.png' alt='hacker' className='w-full lg:hidden' />
-        <img
-          src='assets/hacker-lg.png'
-          alt='hacker'
-          className='hidden w-full lg:block'
-        />
-      </div>
-      <figure className='flex flex-col gap-[1px]'>
-        <BordersWrapper className='relative px-2 py-2'>
+        <div className='flex-1 '>
+          <img src='assets/hero.png' alt='hero section illustration' />
+        </div>
+      </Section>
+      <figure className='mx-auto mb-12 flex max-w-max flex-1 flex-col gap-[1px]'>
+        <BordersWrapper className='relative px-8 py-2'>
           <blockquote>
             <p>With great power comes great electricity bill</p>
           </blockquote>
@@ -43,7 +44,7 @@ const Hero = () => {
           <figcaption>- Dr. Who</figcaption>
         </BordersWrapper>
       </figure>
-    </section>
+    </>
   );
 };
 

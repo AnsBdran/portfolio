@@ -1,6 +1,6 @@
-const AboutMeText = () => {
+const AboutMeText = ({ className }) => {
   return (
-    <div className='mb-4 flex flex-col gap-2'>
+    <div className={`mb-4 flex flex-col gap-2 ${className}`}>
       <p>Hello there, it's me</p>
       <p>
         I'm a self-taught front-end developer based in Kyiv, Ukraine. I can

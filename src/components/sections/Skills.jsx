@@ -1,28 +1,27 @@
-import React from 'react';
-import { BordersWrapper, OutlinedSquare, SectionTitle } from '../elements';
+import { BordersWrapper, Section, SectionTitle } from '../elements';
 import { skills } from '../../data';
-import RandomShapes from '../RandomShapes';
+
 const Skills = () => {
   console.log('hi', Object.keys(skills));
   return (
-    <section className='flex flex-col md:flex-row'>
-      <div className='flex-1'>
+    <Section>
+      <div className=' flex-1 self-start'>
         <SectionTitle>Skills</SectionTitle>
         <img src='assets/skills.png' alt='skills illustration' />
       </div>
-      <div className='flex flex-[2] flex-col flex-wrap items-start gap-8 sm:flex-row-reverse md:w-1/2'>
+      <div className='flex flex-1 flex-row-reverse flex-wrap gap-8 lg:flex-[2] '>
         {Object.keys(skills).map((skill) => (
-          <SkillsSet skill={skill} />
+          <SkillsSet key={skill} skill={skill} />
         ))}
       </div>
-    </section>
+    </Section>
   );
 };
 
 export default Skills;
 
 const SkillsSet = ({ skill }) => (
-  <BordersWrapper className='h-auto sm:w-72'>
+  <BordersWrapper className='h-auto max-w-max'>
     <h3 className='px-3 py-2 text-xl font-bold capitalize'>{skill}</h3>
     <BordersWrapper className='p-2'>
       {skills[skill].map((skill) => (

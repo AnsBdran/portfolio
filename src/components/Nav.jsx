@@ -22,7 +22,7 @@ const Nav = ({ className, linkClasses, closeMenu }) => {
 
 const NavLinkItem = ({ path, title, linkClasses, closeMenu }) => (
   <li>
-    <NavLink to={path} className={linkClasses} onClick={closeMenu}>
+    <NavLink to={path} className={`${linkClasses} link`} onClick={closeMenu}>
       {title}
     </NavLink>
   </li>
