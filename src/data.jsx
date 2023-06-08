@@ -64,8 +64,8 @@ export const projects = [
     title: 'Personal portfolio',
     usedSkills: ['React', 'Tailwindcss', 'react-router'],
     desc: 'Personal portfolio website to help you know me better',
-    demo: '',
-    repo: '',
+    demo: '#',
+    repo: 'https://github.com/AnsBdran/portfolio',
   },
   {
     img: 'e-commerce.png',
