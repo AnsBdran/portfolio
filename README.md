@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-![portfolio cover](./public/projects/portfolio.png)
+[![portfolio cover](./public/projects/portfolio.png 'Go live')](https://anasbadran.netlify.app)
 
 ## Stay tuned for the final release..
 
