@@ -4,9 +4,9 @@ import { PageTitle, Section } from '../components/elements';
 
 const About = () => {
   return (
-    <main className='md:px-24'>
+    <main>
       <PageTitle>About</PageTitle>
-      <Section className='md:flex '>
+      <Section>
         <AboutMeText className='' />
         <div className=''>
           <img src='assets/about_me.png' alt='about me illustartion' />

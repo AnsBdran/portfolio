@@ -20,10 +20,12 @@ export const BordersWrapper = ({ children, className }) => (
   <div className={`${className} bordered-wrapper`}>{children}</div>
 );
 
-export const PageTitle = ({ children }) => <h1>{children}</h1>;
+export const PageTitle = ({ children }) => (
+  <h1 className='mx-auto max-w-6xl'>{children}</h1>
+);
 
 export const SectionTitle = ({ children }) => (
-  <h2 className='s mb-3  flex items-center gap-2 text-2xl after:hidden  after:h-1 after:w-1/4 after:bg-primary after:transition-all hover:after:w-1/3 sm:after:inline-block'>
+  <h2 className='s mx-auto mb-3 flex max-w-6xl items-center gap-2 text-2xl after:hidden  after:h-1 after:w-1/4 after:bg-primary after:transition-all hover:after:w-1/3 sm:after:inline-block'>
     #{children}
   </h2>
 );

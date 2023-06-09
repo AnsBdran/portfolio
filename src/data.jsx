@@ -15,7 +15,7 @@ import {
 } from 'react-icons/si';
 import { FaReact, FaSass, FaVuejs } from 'react-icons/fa';
 import { TbBrandRedux, TbBrandNextjs } from 'react-icons/tb';
-import { BsGit } from 'react-icons/bs';
+import { BsFillMarkdownFill, BsGit } from 'react-icons/bs';
 import { FiFigma } from 'react-icons/fi';
 import { MdSubtitles } from 'react-icons/md';
 import { Davinci } from './components/elements';
@@ -147,6 +147,10 @@ export const allSkills = [
   {
     title: 'Postman',
     icon: <SiPostman size={iconSize} />,
+  },
+  {
+    title: 'Markdown',
+    icon: <BsFillMarkdownFill size={iconSize} />,
   },
   {
     title: 'Photoshop',
