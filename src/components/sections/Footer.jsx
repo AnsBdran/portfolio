@@ -1,16 +1,19 @@
 import { BsDiscord, BsGithub } from 'react-icons/bs';
 import { FaTelegramPlane } from 'react-icons/fa';
-import { Section } from '../elements';
+import { Logo, Section } from '../elements';
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const iconSize = 32;
 
   return (
-    <footer className='border-t border-gray-400 p-2'>
-      <Section className='justify-between md:flex'>
-        <div className='text-center'>
-          <p className='font-bold'>Anas Badran</p>
-          <p>Front-end Developer</p>
+    <footer className='border-t border-gray-400 px-8 py-4'>
+      <section className='mx-auto flex max-w-6xl flex-col justify-between gap-4 md:flex-row'>
+        <div className='flex items-center justify-center gap-4'>
+          <Logo />{' '}
+          <a href='mailto:ansbdran@hotmail.com' className='link'>
+            {' '}
+            ansbdran@hotmail.com
+          </a>
         </div>
         <div className='text-center'>
           <h3 className='mt-4 text-lg'>Media</h3>
@@ -30,9 +33,9 @@ const Footer = () => {
             </a>
           </div>
         </div>
-      </Section>
-      <p className='-mt-12 mb-4 text-center'>
-        Copyright {currentYear}. Made By Anas Badran
+      </section>
+      <p className='mt-6 text-center'>
+        &#169; Copyright {currentYear}. Made By Anas Badran
       </p>
     </footer>
   );

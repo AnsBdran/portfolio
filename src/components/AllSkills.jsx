@@ -4,9 +4,9 @@ import { SectionTitle } from './elements';
 const AllSkills = () => {
   console.log(allSkills);
   return (
-    <section>
+    <section className='py-8'>
       <SectionTitle>The skills I have, and the tools I use</SectionTitle>
-      <div className='mx-auto grid w-max grid-cols-2 items-center gap-12 sm:grid-cols-4 lg:grid-cols-5'>
+      <div className='mx-auto mt-12 grid w-max grid-cols-2 items-center gap-12 sm:grid-cols-4 lg:grid-cols-5'>
         {allSkills.map((skill) => (
           <Skill key={skill.title} skill={skill} />
         ))}

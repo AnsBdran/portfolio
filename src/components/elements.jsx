@@ -21,7 +21,7 @@ export const BordersWrapper = ({ children, className }) => (
 );
 
 export const PageTitle = ({ children }) => (
-  <h1 className='mx-auto max-w-6xl'>{children}</h1>
+  <h1 className='mx-auto mb-4 max-w-6xl'>{children}</h1>
 );
 
 export const SectionTitle = ({ children }) => (
@@ -38,21 +38,24 @@ export const OutlinedSquare = ({ size = 8 }) => (
 );
 
 export const Logo = (props) => (
-  <svg
-    width={24}
-    height={24}
-    viewBox='0 0 52 52'
-    fill='none'
-    xmlns='http://www.w3.org/2000/svg'
-    {...props}
-  >
-    <path
-      fillRule='evenodd'
-      clipRule='evenodd'
-      d='M39 0H26v13H0v39h26V39h26V0H39zM13 39h13V26h13V13H26v13H13v13z'
-      fill='#fff'
-    />
-  </svg>
+  <div className='flex items-center gap-2 text-xl'>
+    <svg
+      width={24}
+      height={24}
+      viewBox='0 0 52 52'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      {...props}
+    >
+      <path
+        fillRule='evenodd'
+        clipRule='evenodd'
+        d='M39 0H26v13H0v39h26V39h26V0H39zM13 39h13V26h13V13H26v13H13v13z'
+        fill='#fff'
+      />
+    </svg>
+    <span className='font-bold text-white'>Anas</span>
+  </div>
 );
 
 export const Davinci = ({ size }) => (

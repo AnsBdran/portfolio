@@ -20,9 +20,8 @@ const Header = () => {
   return (
     <header className='mx-auto w-full max-w-6xl'>
       <section className='flex items-center justify-between px-3 py-5'>
-        <Link to='/' className='flex items-center gap-2 text-xl'>
+        <Link to='/'>
           <Logo />
-          Anas Badran
         </Link>
         <Button small onClick={() => setShowMenu(true)} className='sm:hidden'>
           <TfiMenu size={24} className='block aspect-square cursor-pointer' />

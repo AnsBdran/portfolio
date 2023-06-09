@@ -173,3 +173,26 @@ export const allSkills = [
     icon: <MdSubtitles size={iconSize} />,
   },
 ];
+
+export const accounts = [
+  {
+    title: 'GitHub',
+    link: 'https://www.github.com/ansbdran',
+  },
+  {
+    title: 'Telegram',
+    link: 'https://www.t.me/ansbdran',
+  },
+  {
+    title: 'Email',
+    link: 'mailto:ansbdran@hotmail.com',
+  },
+  {
+    title: '',
+    link: '',
+  },
+  {
+    title: '',
+    link: '',
+  },
+];
